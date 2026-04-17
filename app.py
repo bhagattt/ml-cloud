@@ -12,7 +12,8 @@ def predict():
     # Return the predicted sentiment result
     return jsonify({
         'input_text': text,
-        'sentiment_prediction': 'positive'
+        'sentiment_prediction': 'positive',
+        'model_version': '1.1'
     })
 
 if __name__ == '__main__':
